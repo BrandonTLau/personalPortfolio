@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title>Brandon Lau's Resume</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        h4 {
+            color: #555;
+        }
+        h3 {
+            color: #444;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .resume-photo {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .video {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        .dropdown-container {
+            margin-top: 20px;
+        }
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .link-section {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 30px;
+            background-color: #f9f9f9;
+        }
+        .link-section h3 {
+            margin-top: 0;
+        }
+        .link {
+            display: block;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Brandon Lau</h1>
+        <h4>brandonsf1234@gmail.com | <a href="https://www.linkedin.com/in/brandonlausf">LinkedIn</a> | <a href="https://github.com/BrandonTLau">GitHub</a></h4>
+
+        <h3>EDUCATION</h3>
+        <h4>Bachelor of Science Computer Engineering | GPA - 3.3/4.0 May 2026</h4>
+        <h5>San Jose State University | San Jose, California</h5>
+        <h5>Relevant Coursework: Programming Concepts and Methodology, Object-Oriented Concepts and Methodology,
+        Algorithms and Data Structure Design, Advanced Algorithm Design (in progress), Software Engineering I (in progress)</h5>
+
+        <h3>Technical Skills</h3>
+        <p>C, C++, Python</p>
+
+        <h3>Experience</h3>
+        <h4>Teacher Assistant | The Coder School | San Francisco, California June 2019-July 2019</h4>
+        <ul>
+            <li>Delivered daily Scratch tutoring sessions for groups of 3-4 students, significantly improving comprehension.</li>
+            <li>Supported weekly projects for 10-15 students, ensuring on-time project completion.</li>
+            <li>Instructed and mentored up to 15 students in Scratch programming.</li>
+        </ul>
+
+        <h4>Teacher Assistant/Front Office Assistant | West Portal Lutheran School | San Francisco, California June 2017-July 2018</h4>
+        <ul>
+            <li>Assisted with office tasks, contributing to strong communication and decision-making skills.</li>
+            <li>Mediated conflicts between students, showcasing strong communication resolution skills.</li>
+            <li>Assisted with managing classrooms of up to 20 students.</li>
+        </ul>
+
+        <h3>Key Skills</h3>
+        <ul>
+            <li>Proficiency in C, C++</li>
+            <li>Basic understanding of Python</li>
+            <li>Devoted work ethic</li>
+            <li>Team-player who can also work independently</li>
+            <li>Strong communication and conflict resolution skills</li>
+        </ul>
+
+        <h3>Personal Projects</h3>
+        <h4>Polynomial Calculator</h4>
+        <ul>
+            <li>Implemented a Polynomial class in C++ to handle polynomial operations.</li>
+            <li>Developed constructors to initialize polynomials.</li>
+            <li>Utilized memory management techniques to dynamically allocate and deallocate memory.</li>
+        </ul>
+
+        <h4>Passenger Airlines Seating Chart</h4>
+        <ul>
+            <li>Developed C++ program to manage passenger seating assignments.</li>
+            <li>Implemented dynamic arrays to handle variable seating capacities.</li>
+            <li>Provided flexible input options for seating assignment via console or file reading.</li>
+        </ul>
+
+        <h4>College GPA Calculator</h4>
+        <ul>
+            <li>Developed C++ program to calculate college GPA based on user inputted grades and course credit.</li>
+            <li>Implemented input handling using arrays for course grades and credit.</li>
+            <li>Created 'calculateCollegeGPA' function to compute GPA.</li>
+        </ul>
+
+        <img src="myFace.JPG"  width="500" class="resume-photo">
+
+        <video controls src="videoIntroduction.mp4" class="video" width="500"></video>
+
+        <div class="dropdown-container">
+            <h3>Personal Projects</h3>
+            <label for="projects">Select a project:</label>
+            <select id="projects" onchange="location = this.value;">
+                <option value="">--Select a project--</option>
+                <option value="prj1.html">Polynomial Calculator</option>
+                <option value="prj2.html">Passenger Airlines Seating Chart</option>
+            </select>
+        </div>
+
+        <div class="link-section">
+            <h3>Transcript Information</h3>
+            <p>To view my transcript, please click the link below:</p>
+            <a href="transcript.html" class="link">View My Transcript</a>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

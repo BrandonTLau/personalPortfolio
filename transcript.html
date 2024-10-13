@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<head>
+  <title>Transcript Information</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #004d99;
+    }
+    h1 {
+      border-bottom: 2px solid #004d99;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="password"] {
+      padding: 5px;
+      font-size: 16px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 16px;
+      background-color: #004d99;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    #transcriptContent {
+      display: none;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    td {
+      background-color: #ffffff;
+    }
+    tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+    tr:hover td {
+      background-color: #f1f1f1;
+    }
+    .summary {
+      font-weight: bold;
+      text-align: right;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #004d99;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="resume.html" class="back-button">Back to Resume</a>
+
+  <h1>Transcript Information</h1>
+
+  <p>Enter the password to access transcript information:</p>
+
+  <form name="myForm" id="myForm" onsubmit="return submission();">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="transcriptContent">
+
+    <h2>Transcript Details</h2>
+
+    <h3>External Credits</h3>
+    <table>
+      <tr>
+        <th>External Credit</th>
+        <th>Term</th>
+        <th>GPA</th>
+      </tr>
+      <tr>
+        <td>City College of San Francisco</td>
+        <td>Spring 2022</td>
+        <td rowspan="2" class="summary">GPA: 4.0</td>
+      </tr>
+      <tr>
+        <td>City College of San Francisco</td>
+        <td>Spring 2023</td>
+      </tr>
+    </table>
+
+    <h3>Fall Semester 2021</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>ENGL 1A - First Year Writing</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>ENGR 10 - Intro to Engr</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Math 30 - Calculus I (Course repeated at City College)</td>
+        <td>C-</td>
+      </tr>
+      <tr>
+        <td>Math 42 - Discrete Math</td>
+        <td>B-</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 3.1</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.1</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.1</td>
+      </tr>
+    </table>
+
+    <h3>Spring Semester 2022</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>CMPE 30 - Programming Concept</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>MATH 31W - Calculus II Workshop</td>
+        <td>CR</td>
+      </tr>
+      <tr>
+        <td>MATH 31X - Calculus II</td>
+        <td>B-</td>
+      </tr>
+      <tr>
+        <td>PHYS 50 - General Physics</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 2.909</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.008</td>
+      </tr>
+      <tr>
+        <td class="summary">External Credit</td>
+        <td class="summary">GPA: 4.0</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.185</td>
+      </tr>
+    </table>
+
+    <h3>Fall Semester 2022</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>ENGL 1B - Argument and Analysis</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td>KIN 50 - Tai Chi</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>MATH 32W - Calculus III Workshop</td>
+        <td>CR</td>
+      </tr>
+      <tr>
+        <td>Math 32X - Calculus III</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <td>PHYS 51 - General Physics</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 3.09</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.035</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.158</td>
+      </tr>
+    </table>
+
+    <h3>Spring Semester 2023</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>AAS 1 - Intro Asian American Studies</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>CMPE 50 - Object Oriented Concepts</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>EE 97 - Intro to EE Lab</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>EE 98 - Intro Circuit Analysis</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>MATH 33LA - Differential Equation and Linear Algebra</td>
+        <td>D+</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 3.29</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.093</td>
+      </tr>
+      <tr>
+        <td class="summary">External Credit</td>
+        <td class="summary">GPA: 4.0</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.232</td>
+      </tr>
+    </table>
+
+    <h3>Fall Semester 2023</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>CMPE 124 - Digital Design I</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>ISE 130 - Engr Statistics</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>MUSC 10D - Intro to Hip Hop</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>POLS 15 - US & CA Government</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 3.65</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.212</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.31</td>
+      </tr>
+    </table>
+
+    <h3>Spring Semester 2024</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>CMPE 125 - Digital Design II</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <td>CMPE 126 - Algorithm and Data Structure Design</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Essential US History</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>MATH 33LA - Differential Equation and Linear Algebra (Retake for Grade Forgiveness)</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 2.725</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.126</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.218</td>
+      </tr>
+    </table>
+
+    <h3>Summer Semester 2023</h3>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>BIO 10 - The Living World</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>ENGR 100W - Engr Reports</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td class="summary">Semester Total</td>
+        <td class="summary">GPA: 4.0</td>
+      </tr>
+      <tr>
+        <td class="summary">SJSU Cumulative</td>
+        <td class="summary">GPA: 3.197</td>
+      </tr>
+      <tr>
+        <td class="summary">All College</td>
+        <td class="summary">GPA: 3.275</td>
+      </tr>
+    </table>
+
+    <h3>Fall Semester 2024</h3>
+    <p class="summary">IN PROGRESS</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
